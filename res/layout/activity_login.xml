@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dip"
+        android:layout_marginLeft="40dip"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="E-Mail" />
+
+    <EditText
+        android:id="@+id/etLogin"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="40dip"
+        android:hint="Input e-mail address" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dip"
+        android:layout_marginTop="40dip"
+        android:textSize="20dp"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/etPW"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dip"
+        android:layout_marginTop="10dip"
+        android:hint="Input password"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dip"
+            android:layout_marginTop="30dip"
+            android:textSize="20dp"
+            android:onClick="btnOnClick"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="30dip"
+            android:textSize="20dp"
+            android:onClick="btnOnClick"
+            android:text="Register" />
+    </LinearLayout>
+
+</LinearLayout>
